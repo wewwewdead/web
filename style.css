@@ -139,6 +139,17 @@ span{
 
 
 @media (max-width: 500px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .dynamic-txts > #typed{
+        font-size: .7rem;
+    }
+    .intro > * {
+        font-size: 0.5rem;
+    }
     .header > *{
         font-size: .8rem;
     }
