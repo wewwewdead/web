@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Lea's World</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Lea</span>Clutario</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="./aboutme.html">About Me</a>
+            <a href="#">Education</a>
+            <a href="#">My Skills</a>
+            <a href="#">My Portfolio</a>
+        </nav>
+
+        <a href="#" class="contact">Contact Me</a>
+    </header>
+
+    <div class="home">
+        <div class="home-content">
+            <div class="intro">
+                <h1 class="text">Hi!</h1>
+                <h1 class="text">I'm <span>Lea<br></span>
+                <div class="wrapper"> 
+                    <div class="static-txt"><h1>And I'm a</h1></div>
+                    <div class="dynamic-txts">
+                        <span id="typed"></span>
+                    </div>
+                </div>
+            </div>
+            </h1>
+            <div class="sentence">
+                <p>Hey there! I'm Lea Rose S. Clutario, a 19-year-old  student at Pamantasan ng Lungsod ng Maynila with a deep passion for both the arts and technology. Currently navigating the world of Computer Science, I'm passionate about blending creativity with innovation to solve real-world problems. Whether it's through coding, design, or tech projects, I'm always excited to explore new ideas and challenges. Welcome to my space, where my journey in tech and art come together!</p>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.15752-9/465643314_3817038481881084_4906589560616997253_n.jpg?stp=dst-jpg_s640x640&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEM9dOQmFn3h9BuIph6TBYSZR0r_VNQaB5lHSv9U1BoHgPve3VUVmRvR15S5zaW5TQfBNCEou0LAtU0Z127k5Ld&_nc_ohc=Q5Uzl6jV-p0Q7kNvgEs-8xt&_nc_zt=23&_nc_ht=scontent.fmnl4-4.fna&oh=03_Q7cD1QEQ-j1rDCc0lKOhO3wtawumDVnxXG2WSOPcm4HlyP_nQg&oe=67722E43">
+        </div>
+    </div>
+    
+
+    <script>
+        function OptionsData(strings, typeSpeed, backSpeed, loop) {
+            this.strings = strings; //  for the array of strings
+            this.typeSpeed = typeSpeed; //  for type speed
+            this.backSpeed = backSpeed; //  for back speed
+            this.loop = loop; //  for loop behavior
+        }
+
+        var typingData = new OptionsData(["1st Year BSCS student of PLM", "Artist", "Future Software Engineer"],
+            40,
+            40,
+            true
+        );
+        var typed = new Typed('#typed', {
+            strings: typingData.strings,
+            typeSpeed: typingData.typeSpeed,
+            backSpeed: typingData.backSpeed,
+            loop: typingData.loop
+        });
+    </script>
+</body>
+</html>
