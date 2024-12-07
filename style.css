@@ -139,6 +139,20 @@ span{
 
 
 @media (max-width: 500px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .home-content{
+        width: 200px;
+    }
+    .item:nth-child(1){
+        order: 1;
+    }
+    .img-box {
+        margin-top: 1.5rem;
+    }
     .wrapper{
         display: flex;
         flex-direction: column;
@@ -147,8 +161,11 @@ span{
     .dynamic-txts > #typed{
         font-size: .7rem;
     }
-    .intro > * {
-        font-size: 0.5rem;
+    .intro > h1 {
+        font-size: 0.7rem;
+    }
+    .wrapper .static-txt h1{
+        font-size: 0.7rem;
     }
     .header > *{
         font-size: .8rem;
@@ -186,7 +203,11 @@ span{
         font-size: 1.1rem;
     }
     .home-content p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+    }
+    .home-content {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media (max-width: 900px) {
