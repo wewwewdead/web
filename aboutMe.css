@@ -40,7 +40,6 @@
     margin: 0 20px;
     transition: 0.3 ease;
 }
-.navbar a:hover,
 .contact{
     padding: 10px 28px;
     background-color: #df898a;
@@ -90,7 +89,7 @@
 span{
     color: #740938;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .header > *{
         font-size: .8rem;
     }
@@ -131,7 +130,6 @@ span{
         font-size: .8rem;
     }
 }
-
 @media (max-width: 900px) {
     .header > *{
         font-size: .8rem;
