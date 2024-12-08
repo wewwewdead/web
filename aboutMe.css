@@ -83,7 +83,7 @@
 }
 .about-content p{
     color: #740938;
-    font-size: 19px;
+    font-size: 1 rem;
     margin: 1em 0 3em;
 }
 span{
@@ -126,9 +126,6 @@ span{
     .about-content > h3 {
         font-size: 1.5rem;
     }
-    .about-content > p {
-        font-size: .8rem;
-    }
 }
 @media (max-width: 900px) {
     .header > *{
@@ -150,7 +147,7 @@ span{
     font-size: 1.3rem;
 }
 .about-content > p {
-    font-size: .6rem;
+    font-size: 1rem;
 }
 .about-img img {
     width: 200px;
