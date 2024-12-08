@@ -59,8 +59,7 @@
 .about{
     display:flex;
     position: relative;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
     padding: 8%;
     gap: 5em;
     background:#ea5c71;
@@ -70,6 +69,9 @@
     height: 350px;
     border-radius: 50%;
     padding: 1rem;
+}
+.about-content {
+    width: 350px;
 }
 
 .about-content h2{
@@ -117,8 +119,8 @@ span{
         height: 250px;
     }
     .about {
-        top: 85px;
         gap: 0.5rem;
+        top: 85px;
     }
     .about-content > h2 {
         font-size: 1.5rem;
@@ -134,26 +136,14 @@ span{
     .navbar > a{
         font-size: .8rem;
     }
+}
+@media (min-width: 1000px) {
     .about {
-        top: 75px;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
     }
 }
-@media (min-width: 400px) {
-}
-.about-content > h2 {
-    font-size: 1.3rem;
-}
-.about-content > h3 {
-    font-size: 1.3rem;
-}
-.about-content > p {
-    font-size: 1rem;
-}
-.about-img img {
-    width: 200px;
-    height: 250px;
-}
-.about {
-    flex-direction: column;
-    align-items: center;
-}
+
